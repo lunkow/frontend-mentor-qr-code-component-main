@@ -8,17 +8,91 @@
   
   <title>Frontend Mentor | QR code component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet"> 
+
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { margin-top: 1em; font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+
+    body {
+      display: flex;
+      width: 100%;
+      min-height: 100vh;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      font-family: 'Outfit', sans-serif;
+      font-size: 15px;
+      line-height: 1.27;
+
+      color: hsl(220, 15%, 55%);
+      background-color: hsl(212, 45%, 89%);
+    }
+
+    .qr-container {
+      margin: 2em 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: stretch;
+    }
+
+    .qr-card {
+      display: flex;
+      flex-direction: column;
+      padding: 16px;
+
+      width: 320px;
+      box-sizing: border-box;
+
+      background-color: hsl(0, 0%, 100%);
+
+      border-radius: 18px;
+      box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    .qr-card-image {
+      display: flex;
+      width: 100%;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .qr-card-image img {
+      display: block;
+      width: 100%;
+    }
+
+    .qr-card-title {
+      display: block;
+      margin: 24px 16px 0;
+      text-align: center;
+      
+      font-weight: 700;
+      font-size: 22px;
+
+      color: hsl(218, 44%, 22%);
+      
+    }
+
+    .qr-card-text {
+      display: block;
+      margin: 15px 16px 24px;
+      text-align: center;
+      
+      letter-spacing: 0.01em;
+    }
+
   </style>
 </head>
 <body>
 
   <main class="qr-container">
     <div class="qr-card">
-      <div class="qr-card-image"></div>
+      <div class="qr-card-image">
+        <img src="images/image-qr-code.png" alt="QR CODE">
+      </div>
       <h1 class="qr-card-title">
         Improve your front-end skills by building projects
       </h1>
@@ -29,7 +103,7 @@
     
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://github.com/lunkow">lunkow</a>.
     </div>
   </main>
   
