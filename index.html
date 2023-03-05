@@ -13,16 +13,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet"> 
 
   <style>
-    /* fixing pageheight problem for mobile browsers */
-    :root {
-      --doc-height: 100%;
-    }
-
-    html,
-    body {
-      height: 100vh; /* fallback for Js load */
-      height: var(--doc-height);
-    }
 
     .attribution { margin-top: 1em; font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -100,16 +90,6 @@
     }
 
   </style>
-  
-  <script>
-    /* fixing pageheight problem for mobile browsers */
-    const documentHeight = () => {
-      const doc = document.documentElement
-      doc.style.setProperty('--doc-height', `${window.innerHeight}px`)
-    }
-    window.addEventListener('resize', documentHeight)
-    documentHeight()
-  </script>
 </head>
 <body>
 
